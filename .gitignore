@@ -2,7 +2,5 @@
 /checkpoint.txt
 archive/
 RAP_GPT_training_checkpoints/
-Rap_GPT_06_12/variables/variables.data-00000-of-00001
 .ipynb_checkpoints/*
 .rapGPT_checkpoints/*
-Rap_GPT_06_12/* 
