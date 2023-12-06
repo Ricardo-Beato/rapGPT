@@ -1,0 +1,222 @@
+Action plan:
+already in: nothing to do here
+Step 1. Collect the files from Xavi and from Fer
+Step 2. Check if every artist is there and has got two files
+	Step 2.1 Also check that on my side every artist has 2 files
+Step 3. Create a list with the missing artists from them and run
+
+for artist in artists_list:
+    try:
+        get_tracks_info_for_artist(artist)
+    except Exception as e:
+        print(f"Error processing {artist}: {e}")
+        if isinstance(e, SSLError): # to continue to the next song
+            print("Skipping current song due to error. Continuing to the next song...")
+            continue
+    finally:
+        print(f"Sleeping for 20 seconds before the next song...\n")
+        time.sleep(20)
+
+Step 4. I've got all the JSONs, create a new list with every artist except the ones already in
+Step 5. Run 
+
+for artist in artists_list:
+    load_json_and_clean(artist)
+
+Step 6. Now I've got all the clean DBs.
+Step 7. Ad Hoc cleaning for each artist in albums that make no sense
+Step 8. Concatenate into one single DF
+Step 9. Fetch lyrics for every entry in the unique ID
+
+
+
+Already in:
+KMD
+2Pac
+OutKast
+A Tribe Called Quest
+Public Enemy
+Lauryn Hill
+Drake
+Ghostface Killah
+Nas
+Cardi B
+The Notorious B.I.G.
+JAY-Z
+Masta Ace
+Lil’ Kim
+Eric B. & Rakim
+Common
+Migos
+Run–DMC
+J. Cole
+Earl Sweatshirt
+
+
+
+
+For all of these down: 
+- create a for loop with a list of their names to JSON to df and clean every single one
+
+
+
+Sent to Xavi:
+
+Ice Cube			OK
+50 Cent				OK
+De La Soul			OK
+Azealia Banks			OK
+Cypress Hill			OK
+Aesop Rock			OK
+Kanye West			OK
+Kendrick Lamar			OK
+Dr. Dre				OK
+Big Daddy Kane			OK
+Tyler, The Creator		OK	
+Mobb Deep			OK
+Chief Keef			
+Scarface			OK
+Talib Kweli			OK
+Queen Latifah			OK
+The Pharcyde			ok
+Megan Thee Stallion		OK
+Slick Rick			OK
+Vince Staples			OK
+Missy Elliott			OK
+Kid Cudi			OK
+MF DOOM				ok
+
+On my side:
+Future
+Lil Wayne
+DMX
+Eminem
+Mos Def (Yasiin Bey)
+Pusha T
+Chance the Rapper
+Young Thug
+Young Jeezy (Jeezy)
+21 Savage
+Big Pun
+Playboi Carti
+Doja Cat
+Lil Uzi Vert
+Mac Miller
+Childish Gambino
+Big L
+Cordae
+Jack Harlow
+Snoop Dogg
+
+
+
+
+
+Sent to Fer:
+Danny Brown			OK
+Lil Nas X			OK
+Travis Scott			OK
+Juice WRLD			OK
+A$AP Rocky			OK		
+Pop Smoke			OK
+Nipsey Hussle			OK
+Gucci Mane			OK
+Baby Keem			OK
+Ice Spice			OK
+Playboi Carti			OK
+Lil Yachty			OK
+Atmosphere			OK
+Lupe Fiasco			OK
+Joey Bada$$			OK
+Hopsin				OK
+Joyner Lucas			OK
+
+
+
+To add subsequently:
+Big Sean			OK
+Logic				
+DaBaby
+
+
+artists songs metadata:
+2Pac Songs
+21 Savage Songs
+50 Cent Songs
+A Tribe Called Quest Songs
+A_AP Rocky Songs
+Aesop Rock Songs
+Atmosphere Songs
+Azealia Banks Songs
+Baby Keem Songs
+Big Daddy Kane Songs
+Big L Songs
+Big Pun Songs
+Big Sean Songs
+Cardi B Songs
+Chance the Rapper Songs
+Childish Gambino Songs
+Common Songs
+Cordae Songs
+Cypress Hill Songs
+Danny Brown Songs
+De La Soul Songs
+DMX Songs
+Doja Cat Songs
+Dr_ Dre Songs
+Drake Songs
+Earl Sweatshirt Songs
+Eminem Songs
+Eric B_ _ Rakim Songs
+Future Songs
+Ghostface Killah Songs
+Gucci Mane Songs
+Hopsin Songs
+Ice Cube Songs
+Ice Spice Songs
+J. Cole Songs
+Jack Harlow Songs
+JAY_Z Songs
+Jeezy Songs
+Joey Bada__ Songs
+Joyner Lucas Songs
+Juice WRLD Songs
+Kanye West Songs
+Kendrick Lamar Songs
+Kid Cudi Songs
+KMD Songs
+Lauryn Hill Songs
+Lil Nas X Songs
+Lil Uzi Vert Songs
+Lil Wayne Songs
+Lil Yachty Songs
+Lil_ Kim Songs
+Logic Songs
+Lupe Fiasco Songs
+Mac Miller Songs
+Masta Ace Songs
+Megan Thee Stallion Songs
+MF DOOM Songs
+Migos Songs
+Missy Elliott Songs
+Mobb Deep Songs
+Nas Songs
+Nipsey Hussle Songs
+OutKast Songs
+Playboi Carti Songs
+Pop Smoke Songs
+Public Enemy Songs
+Pusha T Songs
+Queen Latifah Songs
+Run_DMC Songs
+Scarface Songs
+Slick Rick Songs
+Snoop Dogg Songs
+Talib Kweli Songs
+The Notorious B.I.G. Songs
+The Pharcyde Songs
+Travis Scott Songs
+Vince Staples Songs
+Wu-Tang Clan Songs
+Yasiin Bey Songs
+Young Thug Songs
