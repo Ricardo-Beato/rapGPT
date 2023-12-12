@@ -203,7 +203,7 @@ it performed as such:
 I'm a rapper and instrumental producer myself!
 [Why don't you follow me here?](https://www.youtube.com/@BlessedRich.)
 
-![Alt text](download-2.png)
+![youtube](images/download-2.png)
 
 ## Resources and learning materials <a name="resources-and-learning-materials"></a>
 
