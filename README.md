@@ -263,6 +263,3 @@ in other words, this is how we teach the model what's missing and what it should
 - *genius_track_id*
 - *genius_album_id*
 
-
-<a name="headers"/>
-## Headers
